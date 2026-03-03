@@ -9,3 +9,18 @@ Biblioteca feita durante aula de desenvolvimento de sistemas comandada pelo prof
 4. Abrir terminal (CMD, PowerShell, GitBash) na pasta desejada
 5. Digitar o comando "git clone [Link repositório]"
 6. Digitar no terminal "code" [nome da pasta]
+
+# Atividade Biblioteca 
+
+# Criar as classes:
+
+Usuário
+Livro 
+Menu
+Listar Acervo
+Listar Usuários
+Emprestar Livro
+Devolver Livro
+Cadastrar Livro
+Cadastrar Usuário
+Sair
