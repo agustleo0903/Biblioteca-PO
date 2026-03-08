@@ -1,38 +1,38 @@
 public class Livro {
-    private int código;
-    private String título;
+    private int codigo;
+    private String titulo;
     private String autor;
-    private boolean disponível;
+    private boolean disponivel;
 
-    public Livro(int código, String título, String autor, boolean disponível) {
-        this.código = código;
+    public Livro(int codigo, String titulo, String autor) {
+        this.codigo = codigo;
         this.autor = autor;
-        this.título = título;
-        this.disponível = true;
+        this.titulo = titulo;
+        this.disponivel = true;
     }
 
-    public int getCódigo(){
-        return código;
+    public int getCodigo(){
+        return codigo;
     }
 
-    public String getTítulo(){
-        return título;
+    public String getTitulo(){
+        return titulo;
     }
 
     public String getAutor(){
         return autor;
     }
 
-    public boolean isDisponível(){
-        return disponível;
+    public boolean isDisponivel(){
+        return disponivel;
     }
 
     public void emprestar(){
-        disponível = false;
+        disponivel = false;
     }
 
       public void devolver(){
-        disponível = true;
+        disponivel = true;
     }
 
 

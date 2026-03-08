@@ -1,6 +1,6 @@
 public class Usuario {
 
-    private int código;
+    private int codigo;
     private String nome;
     private String cpf;
     private String telefone;
@@ -8,11 +8,11 @@ public class Usuario {
     private String tipo;
     private String senha;
 
-    public Usuario(String nome, String cpf, String telefone, int código, String email, String tipo, String senha) {
+    public Usuario(String nome, String cpf, String telefone, int codigo, String email, String tipo, String senha) {
         this.nome = nome;
         this.cpf = cpf;
         this.telefone = telefone;
-        this.código = código;
+        this.codigo = codigo;
         this.email = email;
         this.tipo = tipo;
         this.senha = senha;
@@ -22,31 +22,17 @@ public class Usuario {
         return nome;
     }
 
-    public String getCpf() {
-        return cpf;
-    }
-
-    public String getTell() {
-        return telefone;
-    }
-
     public String getTipo() {
         return tipo;
     }
 
-    public int getCódigo() {
-        return código;
+    public int getCodigo() {
+        return codigo;
     }
 
     public String getSenha() {
         return senha;
     }
-
-    
-    public String getEmail() {
-        return email;
-    }
-
 
 
 
