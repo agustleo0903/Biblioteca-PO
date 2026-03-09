@@ -33,11 +33,11 @@ public class App {
 
             else if(escolha == 1){
                 int cod = biblioteca.gerarCodigoUsuario();
-                String nome = JOptionPane.showInputDialog("Nome: ");
-                String cpf = JOptionPane.showInputDialog("CPF: "); 
-                String tell = JOptionPane.showInputDialog("Telefone: ");
-                String email = JOptionPane.showInputDialog("Email: ");
-                String senha = JOptionPane.showInputDialog("Senha: ");
+                String nome = JOptionPane.showInputDialog("👤 Nome: ");
+                String cpf = JOptionPane.showInputDialog("🆔 CPF: "); 
+                String tell = JOptionPane.showInputDialog("📞 Telefone: ");
+                String email = JOptionPane.showInputDialog("📧 Email: ");
+                String senha = JOptionPane.showInputDialog("🔒 Senha: ");
                  Usuario novo = new Usuario(nome, cpf, tell, cod, email, "COMUM", senha);
                 biblioteca.cadastrarUsuario(novo);
 
@@ -60,18 +60,18 @@ public class App {
 
             if(logado.getTipo().equals("ADMIN")){
                 menu =
-                    "1 - Listar Usuários\n" +
-                    "2 - Listar Acervo\n" +
-                    "3 - Cadastrar Livro\n" +
-                    "4 - Cadastrar Usuário\n" +
-                    "5 - Cadastrar Admin\n" +
-                    "0 - Sair";
+                    "👥 1 - Listar Usuários\n" +
+                    "📚 2 - Listar Acervo\n" +
+                    "➕  3 - Cadastrar Livro\n" +
+                    "🧑 4 - Cadastrar Usuário\n" +
+                    "🛡 5 - Cadastrar Admin\n" +
+                    "🚪 0 - Sair";
             } else {
                 menu =
-                    "1 - Listar Acervo\n" +
-                    "2 - Emprestar Livro\n" +
-                    "3 - Devolver Livro\n" +
-                    "0 - Sair";
+                    "📚 1 - Listar Acervo\n" +
+                    "📤2 - Emprestar Livro\n" +
+                    "📤3 - Devolver Livro\n" +
+                    "🚪0 - Sair";
             }
 
         String opçao = JOptionPane.showInputDialog(menu);
@@ -114,11 +114,11 @@ public class App {
                 case "4":
                     if(logado.getTipo().equals("ADMIN")){
                         int codUser = biblioteca.gerarCodigoUsuario();
-                        String nome = JOptionPane.showInputDialog("Nome:");
-                        String cpf = JOptionPane.showInputDialog("CPF:");
-                        String tell = JOptionPane.showInputDialog("Telefone:");
-                        String email = JOptionPane.showInputDialog("Email:");
-                        String senha = JOptionPane.showInputDialog("Senha:");
+                        String nome = JOptionPane.showInputDialog("👤 Nome:");
+                        String cpf = JOptionPane.showInputDialog("🆔 CPF:");
+                        String tell = JOptionPane.showInputDialog("📞 Telefone:");
+                        String email = JOptionPane.showInputDialog("📧 Email:");
+                        String senha = JOptionPane.showInputDialog("🔒 Senha:");
 
                         biblioteca.cadastrarUsuario(
                             new Usuario(nome, cpf, tell, codUser, email, "COMUM", senha)
@@ -129,11 +129,11 @@ public class App {
                 case "5":
                     if(logado.getTipo().equals("ADMIN")){
                        int codUser = biblioteca.gerarCodigoUsuario();
-                        String nome = JOptionPane.showInputDialog("Nome do admin:");
-                        String cpf = JOptionPane.showInputDialog("CPF:");
-                        String tel = JOptionPane.showInputDialog("Telefone:");
-                        String email = JOptionPane.showInputDialog("Email:");
-                        String senha = JOptionPane.showInputDialog("Senha:");
+                        String nome = JOptionPane.showInputDialog("👤 Nome do admin:");
+                        String cpf = JOptionPane.showInputDialog("🆔 CPF:");
+                        String tel = JOptionPane.showInputDialog("📞 Telefone:");
+                        String email = JOptionPane.showInputDialog("📧 Email:");
+                        String senha = JOptionPane.showInputDialog("🔒 Senha:");
 
                         biblioteca.cadastrarUsuario(
                             new Usuario(nome, cpf, tel, codUser, email, "ADMIN", senha)
